@@ -11,7 +11,7 @@ pipeline {
         }
         stage("SHELL") {
             steps {
-                git 'https://github.com/22011996/march05.git'
+                git branch: 'master', url: 'https://github.com/22011996/march05.git'
                 sh 'bash demo.sh'
             }
         }
